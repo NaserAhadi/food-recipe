@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a5568
+}
+
+button {
+    width: 90px;
+    height: 38px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    outline: none;
+    border-radius: 25px;
+    border: none
+}
+
+button:hover {
+    color: #fafafa;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-style: none;
+    transition: .5s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.navHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 12px;
+}
+
+.burger {
+    display: none;
+}
+
+.navIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px
+}
+
+.content {
+    background: #f4f4f4;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+.button-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button-link {
+    color: #fafafa;
+    background: #68d391;
+    margin-right: 10px;
+}
+
+.titles {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.main-header {
+    font-size: 3.3rem;
+}
+
+.titles-child {
+    margin: 8px 12px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.image {
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card:hover {
+    box-shadow: 2px 3px 5px 2px #ccc;
+    transition: 0.5s;
+}
+
+.subtitles {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.ingredient {
+    margin: 8px 0 2px 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.chef {
+    width: 100%;
+    margin: 0 0 8px 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.badge {
+    background: #ddd;
+    border-radius: 25px;
+    width: 75px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+    padding: 4px 6px;
+}
+
+.timer {
+    font-size: 10px;
+    color: #333;
+    margin-right: 3px;
+    text-transform: uppercase;
+}
+
+.clock {
+    width: 20px
+}
+
+.moreItemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.load-more {
+    background-color: #68d391;
+    color: #fafafa;
+    width: 140px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        cursor:pointer;
+        margin-right:10px
+    }
+
+    .content {
+        background: none
+    }
+
+    .button-group {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .button-group {
+        margin: 20px 0;
+    }
+}
+
