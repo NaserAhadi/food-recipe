@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>CSS RECIPE</title>
+    <link rel="shortcut icon" href="/images/chef-favicon.png" />
+    <link rel="manifest" href="/manifest.json">
+    <title>FOOD RECIPE</title>
 </head>
 <body>
 <div class="container">
@@ -110,4 +112,9 @@
     </main>
 </div>
 <script src="main.js"></script>
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+</script>
 </body>
