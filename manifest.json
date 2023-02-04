@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Food Recipes App",
+    "short_name": "Food-Recipes",
+    "description": "A basic Food Recipes application Which show how cook delicious food",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./images/chef-icon.png",
+            "sizes": "600x600"
+        }
+    ]
+}
