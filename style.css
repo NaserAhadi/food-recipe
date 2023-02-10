@@ -26,9 +26,9 @@ button:hover {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
     height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
 .navHeader {
@@ -40,9 +40,7 @@ button:hover {
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+    display: none;
 }
 
 .navItem {
@@ -54,7 +52,9 @@ button:hover {
 }
 
 .burger {
-    display: none;
+    display: flex;
+    cursor:pointer;
+    margin-right:10px
 }
 
 .navIcon {
@@ -64,19 +64,17 @@ button:hover {
 }
 
 .content {
-    background: #f4f4f4;
-    display: flex;
-    flex-flow: column wrap;
-    height: 100%;
+    background: none
 }
 
 .button-group {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: flex-end;
-    margin: 10px;
-    padding: 10px;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 20px 0;
+
 }
 
 .button-link {
@@ -102,10 +100,10 @@ button:hover {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 15px;
-    margin-top: 20px;
-    padding: 0 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .image {
@@ -186,47 +184,43 @@ button:hover {
     width: 140px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
     }
 
     .menu {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
     }
 
     .burger {
-        display: flex;
-        cursor:pointer;
-        margin-right:10px
+        display: none;
     }
 
     .content {
-        background: none
+        background: #f4f4f4;
+        display: flex;
+        flex-flow: column wrap;
+        height: 100%;
     }
 
     .button-group {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        margin: 0 0 10px 0;
-        padding: 0 10px;
+        justify-content: flex-end;
+        margin: 10px;
+        padding: 10px;
     }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     .cards-container {
         display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    .button-group {
-        margin: 20px 0;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        padding: 0 20px;
     }
 }
 
