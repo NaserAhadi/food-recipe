@@ -7,7 +7,12 @@ self.addEventListener('install', event => {
     cache.addAll([
       '/',
       '/main.js',
-      '/style.css'
+      '/style.css',
+      '/images/chef-favicon.png',
+      '/images/chef-icon.png',
+      '/images/curry.png',
+      '/images/noodles.png',
+      '/images/stew.png',
     ]);
   })());
 });
